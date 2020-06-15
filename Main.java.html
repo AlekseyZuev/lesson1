@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Main {</span>
+
+    <span class="s0">public static void </span><span class="s1">main (String[] args) {</span>
+        <span class="s2">//Написать метод вычисляющий выражение a * (b + (c / d))</span>
+<span class="s2">// и возвращающий результат,где a, b, c, d – входные параметры этого метода;</span>
+        <span class="s0">byte </span><span class="s1">a = </span><span class="s3">1</span><span class="s0">;</span>
+<span class="s0">int </span><span class="s1">b = </span><span class="s3">1000</span><span class="s0">;</span>
+<span class="s0">short </span><span class="s1">c = </span><span class="s3">12000</span><span class="s0">;</span>
+<span class="s0">long </span><span class="s1">d = </span><span class="s3">2000000</span><span class="s0">;</span>
+<span class="s0">float </span><span class="s1">e = </span><span class="s3">12.24f</span><span class="s0">;</span>
+<span class="s0">double </span><span class="s1">f = </span><span class="s3">123.56</span><span class="s0">;</span>
+<span class="s0">char </span><span class="s1">g = </span><span class="s3">15</span><span class="s0">;</span>
+<span class="s0">boolean </span><span class="s1">yes = </span><span class="s0">true;</span>
+<span class="s0">boolean </span><span class="s1">no = </span><span class="s0">false;</span>
+        <span class="s0">long </span><span class="s1">k = (a*(b+(c/d)))</span><span class="s0">;</span>
+        <span class="s1">System.out.println(k)</span><span class="s0">;</span>
+
+        <span class="s2">//Написать метод, принимающий на вход два числа,</span>
+<span class="s2">// и проверяющий что их сумма лежит в пределах от 10 до 20(включительно), если да – вернуть true, в противном случае – false;</span>
+        <span class="s0">public static void </span><span class="s1">main (String[] args) {</span>
+            <span class="s0">int </span><span class="s1">l = </span><span class="s3">11</span><span class="s0">;</span>
+            <span class="s0">int </span><span class="s1">m = </span><span class="s3">5</span><span class="s0">;</span>
+            <span class="s0">int </span><span class="s1">s = l + m</span><span class="s0">;</span>
+            <span class="s0">if </span><span class="s1">(s &gt;= </span><span class="s3">10 </span><span class="s1">&amp;&amp; s &lt;= </span><span class="s3">20</span><span class="s1">) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;true&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;false&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s2">//Не понимаю, Math.random передает и отрицательные и положительные или только положительные</span>
+<span class="s2">//     Написать метод, которому в качестве параметра передается целое число,</span>
+<span class="s2">//    метод должен напечатать в консоль положительное ли число передали, или отрицательное;</span>
+<span class="s2">//    Замечание: ноль считаем положительным числом.</span>
+        <span class="s0">public static void </span><span class="s1">main (String[] args) {</span>
+            <span class="s0">int </span><span class="s1">a = (</span><span class="s0">int</span><span class="s1">)(Math.random())</span><span class="s0">;</span>
+            <span class="s1">System.out.println(a &lt; </span><span class="s3">0 </span><span class="s1">? </span><span class="s4">&quot;-&quot; </span><span class="s1">: </span><span class="s4">&quot;+&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+        <span class="s2">//Не понимаю, Math.random передает и отрицательные и положительные или только положительные</span>
+<span class="s2">//    6. Написать метод, которому в качестве параметра передается целое число,</span>
+<span class="s2">//    метод должен вернуть true, если число отрицательное;</span>
+        <span class="s0">public static void </span><span class="s1">main (String[] args){</span>
+            <span class="s0">int </span><span class="s1">i = (</span><span class="s0">int</span><span class="s1">) (Math.random())</span><span class="s0">;</span>
+            <span class="s0">if </span><span class="s1">(i &lt; </span><span class="s3">0</span><span class="s1">) {</span>
+                <span class="s1">System.out.println(</span><span class="s4">&quot;true&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+        <span class="s2">//    7. Написать метод, которому в качестве параметра передается строка, обозначающая имя,</span>
+        <span class="s2">//    метод должен вывести в консоль сообщение «Привет, указанное_имя!»;</span>
+        <span class="s0">public static void </span><span class="s1">main (String[] args){</span>
+            <span class="s1">String str = </span><span class="s4">&quot;Aleksey&quot;</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s4">&quot;привет!&quot; </span><span class="s1">+ str)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+        <span class="s2">//    8. * Написать метод, который определяет является ли год високосным, и выводит сообщение в консоль.</span>
+<span class="s2">//    Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.</span>
+        <span class="s0">public static void </span><span class="s1">main (String[] args){</span>
+            <span class="s0">int </span><span class="s1">b = </span><span class="s3">400</span><span class="s0">;</span>
+            <span class="s0">if </span><span class="s1">(b % </span><span class="s3">4 </span><span class="s1">== </span><span class="s3">0</span><span class="s1">) {</span>
+                <span class="s0">if </span><span class="s1">((b % </span><span class="s3">100 </span><span class="s1">!= </span><span class="s3">0</span><span class="s1">) || (b % </span><span class="s3">400 </span><span class="s1">== </span><span class="s3">0</span><span class="s1">)) {</span>
+                    <span class="s1">System.out.println(</span><span class="s4">&quot;Bисокосный&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+    <span class="s1">}</span>
+        <span class="s1">}</span>
+
+
+
+</pre>
+</body>
+</html>
